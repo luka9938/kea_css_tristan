@@ -1,0 +1,161 @@
+@import '_variables.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: var(--fontDefault); 
+}
+
+body {
+    background-color: var(--colorBg);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorLink);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--colorBgHeader);
+    color: var(--colorTextHeader);
+    font-family: var(--fontDefault);
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--colorBgNav);
+    color: var(--colorTextNav);
+    font-family: var(--fontNav);
+}
+
+article {
+    padding: 1rem;
+}
+
+section > article {
+    margin: 0 auto;
+}
+
+span {
+    font-weight: bold;
+}
+
+fieldset {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+blockquote {
+    padding: 1rem;
+    background-color: var(--colorBgHeader);
+    border-radius: 1rem;
+    color: var(--colorTextBannerBtn);
+}
+
+blockquote p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+cite {
+    font-style: italic;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--colorBgHeader);
+    color: var(--colorTextHeader);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.grid_last {
+    grid-column: span 3;
+}
+
+.some {
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+
+.icon {
+    width: auto;
+}
+
+input[type=submit] {
+    width: 5rem;
+    margin: 1rem;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--colorTextBanner);
+    background-color: var(--colorTextBannerBtn);
+    border: 1px solid var(--colorTextBanner);
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0;
+    }
+
+    header{
+        text-align: left;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header img {
+        display: none;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .right {
+        text-align: center;
+    }
+}

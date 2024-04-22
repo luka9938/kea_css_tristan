@@ -1,0 +1,17 @@
+:root {
+    --colorBgHeader: rgb(53, 53, 97);
+    --colorTextHeader: rgb(218, 209, 113);
+    --colorBgNav: rgb(110, 110, 189);
+    --colorTextNav: rgb(255, 255, 255);
+    --colorBgBanner: rgb(218, 209, 113);
+    --colorTextBanner: black;
+    --colorBgBannerBtn: rgb(84, 54, 0);
+    --colorTextBannerBtn: rgb(255, 255, 255);
+    --colorFrame: rgb(255, 255, 255);
+    --colorBg: rgb(250, 250, 245);
+    --colorLink: rgb(255, 255, 255);
+
+    --fontDefault: 'Trebuchet MS', sans-serif;
+    --fontNav: 'Lucida Console', monospace;
+    --fontHighlight: 'Optima', sans-serif;
+}
